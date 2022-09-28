@@ -1,0 +1,48 @@
+<nav id="header" class=" navbar navbar-expand-md navbar-dark fixed-top bg-dark" *ngIf = '!this.isLogin' [ngClass]="singleClass ? 'bg-dark' : 'bg-trans'">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img class="img-fluid" src="../../../../assets/images/logo.png"/></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mx-auto mb-2 mb-md-0 ">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" routerLink = "/home" routerLinkActive = "active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        
+        <button class="btn btn-outline-light me-3" type="button" routerLink = "/login" routerLinkActive = "active">Login</button>
+<button class="btn btn-outline-light" type="button" routerLink = "/register"  routerLinkActive = "active">Sign-up</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- <div class="container-fluid" *ngIf = '!this.isLogin'>
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3  border-bottom">
+      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 link-secondary" [routerLink] = "['']" routerLinkActive = "active">Home</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <button type="button" class="btn btn-outline-primary me-2" routerLink = "/login" routerLinkActive = "active">Login</button>
+        <button type="button" class="btn btn-primary" routerLink = "/register"  routerLinkActive = "active">Sign-up</button>
+      </div>
+      
+    </header>
+  </div> -->

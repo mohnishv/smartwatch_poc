@@ -1,0 +1,162 @@
+//
+// Variables
+//
+
+//
+// Base variables
+//
+$breakpoint-large: 1200px;
+$breakpoint-desktop: 991px;
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 480px;
+
+// Global settings
+
+$enable-caret: true !default;
+$enable-rounded: true !default;
+$enable-gradients: false !default;
+$enable-transitions: true !default;
+$enable-grid-classes: true !default;
+$enable-print-styles: true !default;
+
+// Shadows
+
+$enable-shadows: true !default;
+
+// Color system
+
+$white: #fff !default;
+$gray-100: #f6f9fc !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #8898aa !default; // Line footer color
+$gray-700: #525f7f !default; // Line p color
+$gray-800: #32325d !default; // Line heading color
+$gray-900: #212529 !default;
+$black: #000 !default;
+$profilename:#414141;
+
+$grays: () !default;
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
+);
+
+$blue: #5e72e4 !default;
+$indigo: #5603ad !default;
+$purple: #8965e0 !default;
+$pink: #f3a4b5 !default;
+$red: #f5365c !default;
+$orange: #fb6340 !default;
+$yellow: #ffd600 !default;
+$green: #2dce89 !default;
+$teal: #11cdef !default;
+$cyan: #2bffc6 !default;
+
+$colors: () !default;
+$colors: map-merge(
+  (
+    "blue": $blue,
+    "indigo": $indigo,
+    "purple": $purple,
+    "pink": $pink,
+    "red": $red,
+    "orange": $orange,
+    "yellow": $yellow,
+    "green": $green,
+    "teal": $teal,
+    "cyan": $cyan,
+    "white": $white,
+    "gray": $gray-600,
+    "light": $gray-400,
+    "lighter": $gray-200,
+    "gray-dark": $gray-800
+  ),
+  $colors
+);
+
+$default: #172b4d !default;
+$primary: #5e72e4 !default;
+$secondary: #f7fafc !default;
+$success: $green !default;
+$info: $teal !default;
+$warning: $orange !default;
+$danger: $red !default;
+$light: $gray-500 !default;
+$dark: $gray-900 !default;
+$darker: darken($gray-900, 15%) !default;
+$primary-clr: #173a64;
+$secondary-clr : #f6ca21;
+$secondary-clr-light : #ecc837;
+$logo-clr-red:#eb181d;
+$primary-clr-dark:#0d233f;
+$text-line:#7dbfb8;
+$cancel-bg:#bdbec2;
+$cancel-txt:#696a6c;
+$DoveGray:#666666;
+$HitGray:#adb5bd;
+$Salem:#089649;
+$SilverSand:#C3C7CC;
+$AthensGray:#F5F6F8;
+$Alabaster:#f7f7f7;
+$Manatee:#9B9B9D;
+$Gallery:#efefef;
+$SilverChalice:#B1B1B1;
+$BreakerBay:#59A9A1;
+$hotlead:#cc2330;
+$warmlead:#f7a30f;
+$coldlead:#5daea5;
+$Scorpion:#606060;
+$FrenchGray:#BDBEC2;
+$Aluminium:#A8A9AD;
+$Sushi:#8ec63f;
+$Akaroa:#D7C3A8;
+$ScarpaFlow:#59595B;
+$AthensGray:#f1f1f3;
+$ChateauGreen:#3AB54B;
+$BlackSqueeze:#F3F8FB;
+$Monza:#dd0000;
+$CatskillWhite:#EDF6F5;
+$grey-bold:#868686;
+$drop-bor:#5eafa6;
+$Geyser:#CEDAE0;
+$Edward:#9D9E9E;
+$Neptune:#5eafa6;
+$Zumthor:#ecf6ff;
+$Tradewind:#5EAFA6;
+$Cardinal:#CC222B;
+$LinkWater:#E9F2F8;
+$Heather:#BAC4CE;
+$Nevada:#686F71;
+$AquaSqueeze:#F2F9F7;
+$CuriousBlue:#3092E0;
+$BuddhaGold:#CCA308;
+$CitrineWhite:#FBF8E5;
+$Toast:#A08063;
+
+$facebook: #3b5999 !default;
+$twitter: #1da1f2 !default;
+$google-plus: #dd4b39 !default;
+$instagram: #e4405f !default;
+$pinterest: #bd081c !default;
+$youtube: #cd201f !default;
+$slack: #3aaf85 !default;
+$dribbble: #ea4c89 !default;
+$github: #222222 !default;
+$vimeo: #04a0f0 !default;
+
+
+
+

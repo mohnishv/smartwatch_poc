@@ -1,0 +1,131 @@
+
+<!-- <div class = 'row m-0 w-100'>
+    <div class = 'col-md-4 offset-4 mt-5' *ngIf = '!this.isLogin'>
+        <h4>Login</h4>
+        <form #myform = "ngForm" (ngSubmit) = "onSubmit(myform)" >
+            <div class = 'form-group'>
+                <input class = 'form-control' type = "text" name = "username" placeholder = "Username" ngModel>
+            </div>
+          
+            <div class = 'form-group'>
+                <input class = 'form-control' type = "password" name = "password" placeholder = "Password" ngModel>
+            </div>
+            <input class= 'btn btn-outline-info' type = "submit" value = "Login">
+        </form>
+    </div>
+    <div class = 'col-md-4 offset-4 mt-5' *ngIf = 'this.isLogin'>
+       
+        <h1>You are logged in</h1>
+        <button class = 'btn btn-outline-info' (click) = 'logout()'>Log-out</button>
+          
+    </div>
+</div>
+<div> -->
+  <app-site-header></app-site-header>
+  
+<section class="mt-5" *ngIf = '!this.isLogin'>
+    <!-- Jumbotron -->
+    <div class="px-4 py-5 px-md-5 text-center text-lg-start vh-100" style="background-color: hsl(0, 0%, 96%)">
+      <div class="container">
+        <div class="row gx-lg-6 align-items-center">
+          <div class="col-lg-8 mb-5 mb-lg-0">
+            <div class="p1">
+              <img class="img-fluid" src="../../../../assets/images/watch.png"/>
+            </div>
+            <h1 class="my-3 display-3 fw-bold ls-tight">
+              Some Features <br>
+              <span class="text-primary">that Made us Unique</span>
+            </h1>
+            <p style="color: hsl(217, 10%, 50.8%)">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Eveniet, itaque accusantium odio, soluta, corrupti aliquam
+              quibusdam tempora at cupiditate quis eum maiores libero
+              veritatis? Dicta facilis sint aliquid ipsum atque?
+            </p>
+          </div>
+  
+          <div class="col-lg-4 mb-5 mb-lg-0"  *ngIf = '!this.isLogin'>
+            <div class="card">
+              <div class="card-body py-5 px-md-5">
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" >
+
+                  <!-- 2 column grid layout with text inputs for the first and last names -->
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="head-login">Login</div>
+                    </div>
+                    <div class="col-md-12 mb-4">
+                      <div class="form-row">
+                     
+                        <div class="mb-2 ">
+                            <label>User Name</label>
+                            <input type="text" formControlName="username" name = "username" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" ngModel/>
+                            <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                                <div *ngIf="f.username.errors.required">username is required</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="form-row">
+                    <div class="mb-2 col">
+                      <label>Password</label>
+                      <input type="password" formControlName="password" name="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" ngModel/>
+                      <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                          <div *ngIf="f.password.errors.required">Password is required</div>
+                          <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+                      </div>
+                  </div>
+                </div>
+                    </div>
+                   
+                  </div>
+  
+  
+                  <!-- Password input -->
+                  
+  
+                  <!-- Checkbox -->
+                  <!-- <div class="form-check d-flex justify-content-center mb-4">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked="">
+                    <label class="form-check-label" for="form2Example33">
+                      Remember me
+                    </label>
+                  </div> -->
+  
+                  <!-- Submit button -->
+                  
+                  <button type="submit" class="btn btn-primary btn-block mb-4">
+                    Login
+                  </button>
+                 
+                  
+                </form>
+               
+              </div>
+            </div>
+          </div>
+        
+        
+        </div>
+      </div>
+    </div>
+    <!-- Jumbotron -->
+  </section> 
+  <div *ngIf = 'this.isLogin' class="full-height-section">
+    <div class="full-height-tablecell">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2 text-center">
+          <div class="error-text">
+            <h1>Sign In</h1>
+            <img class="img-fluid" src="../../../../assets/images/loggedin.png">
+           
+            <p>You are already logged in.</p>
+            <a href="" (click) = 'logout()' class="circle-btn">Click here to log off.</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
